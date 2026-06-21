@@ -211,6 +211,73 @@ section {
 
 .info-projeto { flex: 1; min-width: 300px; }
 .imagem-projeto { flex: 1; min-width: 300px; background: #1a151f; height: 300px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #475569; }
+.imagem-projeto img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; }
+
+/* Grade de Portfólio */
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cartao-portfolio {
+    background: #120f16;
+    border: 1px solid rgba(209, 122, 93, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cartao-portfolio:hover {
+    transform: translateY(-8px);
+    border-color: rgba(209, 122, 93, 0.5);
+}
+
+.imagem-portfolio {
+    width: 100%;
+    height: 280px;
+    background: #1a151f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    display: block;
+}
+
+.placeholder-landing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #475569;
+    background: linear-gradient(135deg, #1a151f 0%, #251d2b 100%);
+}
+
+.info-portfolio {
+    padding: 1.8rem;
+}
+
+.info-portfolio h3 {
+    color: var(--laranja-cobre);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.info-portfolio p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
 
 /* Sobre Nós */
 .sobre-conteudo {
@@ -478,6 +545,7 @@ footer { text-align: center; padding: 3rem; border-top: 1px solid rgba(255,255,2
     }
     .links-nav a { margin: 0; }
     .grade-servicos { gap: 1.5rem; }
+    .grade-portfolio { grid-template-columns: 1fr; gap: 1.5rem; }
     .projeto-destaque { flex-direction: column; padding: 30px 20px; }
     .sobre-conteudo { grid-template-columns: 1fr; gap: 30px; }
     .placeholder-foto { width: 120px; height: 150px; }
