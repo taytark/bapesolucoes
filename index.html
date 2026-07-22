@@ -1,398 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bape Soluções | Consultoria e Desenvolvimento</title>
-    <link rel="icon" href="img/LOGO-BAPE-SOLUCOES.jpeg" type="image/jpeg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bape Soluções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/logo-bapesolucoes.png" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="container">
+      <div class="header-content">
+        <a href="#" class="logo">
+          <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon" />
+          <span>Bape Soluções</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#servicos">SERVIÇOS</a></li>
+            <li><a href="#portfolio">PORTFÓLIO</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#orcamento" style="color: var(--accent-color)">ORÇAMENTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <nav>
-        <a href="#inicio" class="logo">BAPE SOLUÇÕES</a>
-        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" type="button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div id="navMenu" class="links-nav">
-            <a href="#inicio">Início</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#orcamento">Orçamento</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#contato">Contato</a>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <span class="section-label">ESTÚDIO DE SOFTWARE</span>
+        <h1 class="title-serif">
+          Arquitetura de <br /><span class="italic-accent">Software</span> com alma.
+        </h1>
+        <p>
+          Criamos soluções digitais personalizadas que unem a precisão técnica
+          ao design editorial. Apps, sistemas e experiências de usuário sob medida.
+        </p>
+        <div class="hero-actions">
+          <a href="#orcamento" class="btn-primary">INICIAR PROJETO &rarr;</a>
+          <a href="#portfolio" class="link-secondary">VER PORTFÓLIO</a>
         </div>
-    </nav>
-
-    <!-- INÍCIO -->
-    <section id="inicio">
-        <h1>Excelência Técnica em Cada Detalhe.</h1>
-        <p class="hero-subtitle">Transformamos ideias em soluções digitais robustas, unindo desempenho, usabilidade e entregas no prazo.</p>
-        <div>
-            <a href="#orcamento" class="botao">Construir Projeto</a>
-        </div>
-        <div class="hero-tags">
-            <span class="hero-tag">Entrega rápida e segura</span>
-            <span class="hero-tag">Soluções sob medida</span>
-            <span class="hero-tag">Suporte no pós-lançamento</span>
-        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Espaço da imagem do celular -->
+      </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos">
-        <h2 class="section-titulo">Nossos Serviços</h2>
-        <div class="grade-servicos">
-            <div class="cartao-servico">
-                <h3>Desenvolvimento de Apps</h3>
-                <p>Criação de aplicativos móveis intuitivos e rápidos para Android e iOS.</p>
-            </div>
-            <div class="cartao-servico">
-                <h3>Sistemas Personalizados</h3>
-                <p>Desenvolvimento de plataformas web sob medida para otimizar processos internos.</p>
-            </div>
-            <div class="cartao-servico">
-                <h3>Design UX/UI</h3>
-                <p>Experiências digitais com interfaces elegantes, acessíveis e com foco em conversão.</p>
-            </div>
-            <div class="cartao-servico">
-                <h3>Garantia de Qualidade (QA)</h3>
-                <p>Testes automatizados e análise de código para garantir softwares livre de erros.</p>
-            </div>
+    <!-- EXPERTISE / SERVIÇOS -->
+    <section class="expertise" id="servicos">
+      <div class="container">
+        <div class="expertise-header">
+          <h2 class="title-serif">Nossa Expertise</h2>
+          <p>DA CONCEPÇÃO VISUAL À INFRAESTRUTURA ROBUSTA DE BACKEND.</p>
         </div>
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <span class="number">01/</span>
+            <h3>Desenvolvimento de Apps</h3>
+            <p>Aplicativos móveis para Android e iOS, com interfaces fluidas e performance nativa.</p>
+          </div>
+          <div class="expertise-item">
+            <span class="number">02/</span>
+            <h3>Sistemas Personalizados</h3>
+            <p>Plataformas web sob medida para otimizar processos internos e escalar operações.</p>
+          </div>
+          <div class="expertise-item">
+            <span class="number">03/</span>
+            <h3>Design UX/UI</h3>
+            <p>Interfaces que contam histórias, priorizando usabilidade sem sacrificar a estética.</p>
+          </div>
+          <div class="expertise-item">
+            <span class="number">04/</span>
+            <h3>Garantia de Qualidade</h3>
+            <p>Testes automatizados e análise de código para entregas livres de erros.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio">
-        <h2 class="section-titulo">Portfólio</h2>
-        <div class="grade-portfolio">
-            <div class="cartao-portfolio">
-                <div class="imagem-portfolio">
-                    <img src="img/movimento-delas.PNG" alt="Movimento Delas">
-                </div>
-                <div class="info-portfolio">
-                    <h3>Movimento Delas</h3>
-                    <p>Sistema de agendamento de aulas para personal trainers. Controle total de alunos e turmas em um único lugar.</p>
-                </div>
-            </div>
-            <div class="cartao-portfolio">
-                <div class="imagem-portfolio">
-                    <img src="img/polarys.PNG" alt="Polarys Ornatos">
-                </div>
-                <div class="info-portfolio">
-                    <h3>Polarys Ornatos</h3>
-                    <p>Loja e-commerce de joias de alta qualidade. Catálogo completo com gestão de pedidos e clientes.</p>
-                </div>
-            </div>
-            <div class="cartao-portfolio">
-                <div class="imagem-portfolio">
-                    <img src="img/starfit.PNG" alt="StarFit">
-                </div>
-                <div class="info-portfolio">
-                    <h3>StarFit</h3>
-                    <p>Plataforma para montagem de treinos personalizados com app para o aluno acompanhar evolução física.</p>
-                </div>
-            </div>
-            <div class="cartao-portfolio">
-                <div class="imagem-portfolio">
-                    <div class="placeholder-landing">+</div>
-                </div>
-                <div class="info-portfolio">
-                    <h3>Landing Page</h3>
-                    <p>Página de apresentação de produto ou serviço otimizada para conversão e resultados.</p>
-                </div>
-            </div>
+    <!-- SOBRE -->
+    <section class="about container" id="sobre">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-label">SOBRE NÓS</span>
+          <h2 class="title-serif">Nossa <br/><span class="italic-accent">História</span></h2>
+          <p>
+            A Bape Soluções nasceu da união entre a paixão pelo desenvolvimento de software 
+             o compromisso com a qualidade técnica. Liderada por Tayane Ramos e Maiara Baltazar, nossa consultoria foca em entregar produtos que não apenas funcionam, mas superam as expectativas de performance e usabilidade.
+          </p>
         </div>
+        <div class="about-images">
+          <div class="about-image-1"></div>
+          <div class="about-image-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS / PORTFÓLIO -->
+    <section class="projects container" id="portfolio">
+      <div class="featured-project">
+        <div class="featured-image">
+          <!-- Imagem do app Movimento Delas -->
+        </div>
+        <div class="featured-text">
+          <span class="section-label">PROJETO EM DESTAQUE</span>
+          <h2 class="title-serif">Movimento Delas: <br />agenda que empodera.</h2>
+          <p>
+            Sistema de agendamento de aulas para personal trainers. Controle
+            total de alunas, turmas e evolução em um único lugar — pensado com
+            carinho para uma rotina que respira.
+          </p>
+          <a href="#" class="link-underline">Ver projeto completo</a>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="section-label">E-COMMERCE</span>
+          <h3>Polarys Ornatos</h3>
+          <p>Loja online de joias de alta qualidade com catálogo completo e gestão de pedidos.</p>
+        </div>
+        <div class="project-card">
+          <span class="section-label">HEALTH TECH</span>
+          <h3>StarFit</h3>
+          <p>Plataforma para montagem de treinos personalizados com app de acompanhamento.</p>
+        </div>
+        <div class="project-card">
+          <span class="section-label">LANDING PAGE</span>
+          <h3>Páginas de Conversão</h3>
+          <p>Apresentação de produto ou serviço otimizada para conversão e resultados.</p>
+        </div>
+      </div>
     </section>
 
     <!-- ORÇAMENTO -->
-    <section id="orcamento">
-        <h2 class="section-titulo">Solicite um Orçamento</h2>
-        <div class="container-formulario">
-            <form id="orcamento-form" action="https://formsubmit.co/ajax/bapesolucoes@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Orçamento - Bape Soluções">
-                <input type="hidden" name="_captcha" value="false">
-                <div class="campo">
-                    <label>Seu Nome</label>
-                    <input type="text" name="nome" placeholder="Como deseja ser chamado(a)?" required>
-                </div>
-                <div class="campo">
-                    <label>Seu Email</label>
-                    <input type="email" name="email" placeholder="Digite seu email" required>
-                    <div class="field-error" id="emailError"></div>
-                </div>
-                <div class="campo">
-                    <label>Seu Telefone</label>
-                    <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-                    <div class="field-error" id="phoneError"></div>
-                </div>
-                <div class="campo tipo-projeto">
-                    <label>Tipo de Projeto</label>
-                    <div class="project-options">
-                        <button type="button" class="project-card active" data-value="Aplicativo Móvel">
-                            <strong>Aplicativo Móvel</strong>
-                            <span>App para celular com foco em vendas ou serviços.</span>
-                        </button>
-                        <button type="button" class="project-card" data-value="Site / Landing Page">
-                            <strong>Site / Landing Page</strong>
-                            <span>Página para apresentar sua empresa ou produto.</span>
-                        </button>
-                        <button type="button" class="project-card" data-value="Sistema Web">
-                            <strong>Sistema Web</strong>
-                            <span>Plataforma online para gerenciar processos internos.</span>
-                        </button>
-                        <button type="button" class="project-card" data-value="QA / Testes">
-                            <strong>QA / Testes</strong>
-                            <span>Validação de qualidade para reduzir falhas do seu software.</span>
-                        </button>
-                    </div>
-                    <input type="hidden" id="tipoProjeto" name="tipo" value="Aplicativo Móvel" required>
-                    <p id="tipoHelp" class="select-helper">Aplicativo móvel para empresas e serviços que precisam de presença no celular.</p>
-                </div>
-                <div class="campo">
-                    <label>Descrição da Ideia</label>
-                    <textarea name="descricao" rows="5" placeholder="Conte-nos um pouco sobre o que você precisa..." required></textarea>
-                </div>
-                <button type="submit" class="botao" style="width: 100%; cursor: pointer;">Enviar Solicitação</button>
-                <div class="form-feedback" id="formFeedback"></div>
-            </form>
+    <section class="contact container" id="orcamento">
+      <span class="section-label">ORÇAMENTO</span>
+      <h2 class="title-serif">
+        Vamos construir o <br /><span class="italic-accent">amanhã</span>?
+      </h2>
+      <p>
+        Entre em contato para uma consultoria técnica e criativa inicial.
+        Projetamos soluções que elevam seu negócio.
+      </p>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label>SEU NOME</label>
+          <input type="text" placeholder="Como podemos te chamar?" />
         </div>
-    </section>
-    <!-- SOBRE NÓS -->
-    <section id="sobre">
-        <div class="sobre-conteudo">
-            <div class="sobre-texto">
-                <h2 class="section-titulo">Sobre Nós</h2>
-                <p>A Bape Soluções nasceu da união entre a paixão pelo desenvolvimento de software e o compromisso com a qualidade técnica. Liderada por Tayane Ramos e Maiara, nossa consultoria foca em entregar produtos que não apenas funcionam, mas superam as expectativas de performance e usabilidade.</p>
-            </div>
-            <div class="team-grid">
-                <article class="team-card">
-                    <div class="team-photo">
-                        <img src="https://s3-up-reprograma.s3.us-east-1.amazonaws.com/FOTO-SITE-TAYANE-2026.jpg" alt="Tayane Ramos">
-                    </div>
-                    <div class="team-info">
-                        <h3>Tayane Ramos</h3>
-                    </div>
-                </article>
-                <article class="team-card">
-                    <div class="team-photo">
-                        <img src="https://s3-up-reprograma.s3.us-east-1.amazonaws.com/FOTO-SITE-MAIARA.png" alt="Maiara Baltazar">
-                    </div>
-                    <div class="team-info">
-                        <h3>Maiara Baltazar</h3>
-                    </div>
-                </article>
-            </div>
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="email" placeholder="voce@empresa.com.br" />
         </div>
+        <div class="form-group">
+          <label>SOBRE O PROJETO</label>
+          <input type="text" placeholder="Conte brevemente o que você precisa" />
+        </div>
+        <button type="button" class="btn-submit">SOLICITAR ORÇAMENTO</button>
+      </form>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="contato-section">
-        <h2 class="section-titulo">Contato</h2>
-        <p>Tem alguma dúvida? Entre em contato conosco diretamente.</p>
-        <p class="contato-email">bapesolucoes@gmail.com</p>
-        <div class="contato-links">
-            <span>Instagram</span> | <span>LinkedIn</span> | <span>WhatsApp</span>
-        </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 BAPE SOLUÇÕES - Tecnologia com Propósito.</p>
+      <div class="container footer-content">
+        <div class="footer-left">
+          <div class="logo">
+            <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon-footer" />
+          </div>
+          <span>© 2026 BAPE SOLUÇÕES</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">LINKEDIN</a>
+          <a href="#">INSTAGRAM</a>
+          <a href="#">CONTATO</a>
+        </div>
+      </div>
     </footer>
-
-    <script>
-        const orcamentoForm = document.getElementById('orcamento-form');
-        const formFeedback = document.getElementById('formFeedback');
-
-        function validateEmail(value) {
-            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return regex.test(value);
-        }
-
-        function validatePhone(value) {
-            const digits = value.replace(/\D/g, '');
-            return digits.length === 10 || digits.length === 11;
-        }
-
-        function showError(message) {
-            formFeedback.textContent = message;
-            formFeedback.classList.add('visible');
-        }
-
-        function clearError() {
-            formFeedback.textContent = '';
-            formFeedback.classList.remove('visible', 'success');
-        }
-
-        function formatPhone(value) {
-            const digits = value.replace(/\D/g, '');
-            if (digits.length <= 2) return `(${digits}`;
-            if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
-            if (digits.length <= 10) return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`;
-            return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7, 11)}`;
-        }
-
-        const emailInput = document.querySelector('input[name="email"]');
-        const telefoneInput = document.querySelector('input[name="telefone"]');
-        const emailError = document.getElementById('emailError');
-        const phoneError = document.getElementById('phoneError');
-
-        function showFieldError(field, message) {
-            if (!field) return;
-            field.textContent = message;
-            field.classList.add('visible');
-        }
-
-        function clearFieldError(field) {
-            if (!field) return;
-            field.textContent = '';
-            field.classList.remove('visible');
-        }
-
-        function clearFieldErrors() {
-            clearFieldError(emailError);
-            clearFieldError(phoneError);
-        }
-
-        if (telefoneInput) {
-            telefoneInput.addEventListener('input', () => {
-                telefoneInput.value = formatPhone(telefoneInput.value);
-                clearFieldError(phoneError);
-                clearError();
-            });
-            telefoneInput.addEventListener('blur', () => {
-                if (telefoneInput.value && !validatePhone(telefoneInput.value)) {
-                    showFieldError(phoneError, 'Telefone inválido. Digite o DDD e o número corretamente.');
-                }
-            });
-        }
-        if (emailInput) {
-            emailInput.addEventListener('input', () => {
-                clearFieldError(emailError);
-                clearError();
-            });
-            emailInput.addEventListener('blur', () => {
-                if (emailInput.value && !validateEmail(emailInput.value)) {
-                    showFieldError(emailError, 'Email inválido. Verifique o formato e tente novamente.');
-                }
-            });
-        }
-
-        if (orcamentoForm) {
-            orcamentoForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                clearError();
-                clearFieldErrors();
-
-                const nome = this.nome.value.trim();
-                const email = this.email.value.trim();
-                const telefone = this.telefone.value.trim();
-                const tipo = this.tipo.value;
-                const descricao = this.descricao.value.trim();
-
-                if (!nome) {
-                    showError('Por favor, informe seu nome.');
-                    return;
-                }
-                if (!validateEmail(email)) {
-                    showFieldError(emailError, 'Por favor, informe um email válido.');
-                    return;
-                }
-                if (!validatePhone(telefone)) {
-                    showFieldError(phoneError, 'Por favor, informe um telefone válido com DDD.');
-                    return;
-                }
-                if (!descricao) {
-                    showError('Por favor, informe a descrição da sua ideia.');
-                    return;
-                }
-
-                const formData = new FormData(this);
-                fetch(this.action, {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
-                    body: formData
-                })
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    return response.json().catch(() => ({ success: true }));
-                })
-                .then(data => {
-                    if (data.success || data.success === undefined) {
-                        formFeedback.textContent = 'Obrigado! Sua solicitação foi enviada com sucesso. Entraremos em contato em breve.';
-                        formFeedback.classList.add('visible', 'success');
-                        this.reset();
-                        document.querySelectorAll('.project-card').forEach(card => card.classList.remove('active'));
-                        const firstCard = document.querySelector('.project-card[data-value="Aplicativo Móvel"]');
-                        if (firstCard) firstCard.classList.add('active');
-                        document.getElementById('tipoProjeto').value = 'Aplicativo Móvel';
-                        document.getElementById('tipoHelp').textContent = 'Aplicativo móvel para empresas e serviços que precisam de presença no celular.';
-                    } else {
-                        showError('Não foi possível enviar. Tente novamente mais tarde.');
-                    }
-                })
-                .catch(() => {
-                    showError('Não foi possível enviar. Verifique sua conexão e tente novamente.');
-                });
-            });
-        }
-
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-        function toggleMenu() {
-            if (navMenu && menuToggle) {
-                navMenu.classList.toggle('open');
-                menuToggle.classList.toggle('open');
-            }
-        }
-        if (menuToggle) {
-            menuToggle.addEventListener('click', toggleMenu);
-        }
-        document.querySelectorAll('.links-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navMenu && menuToggle) {
-                    navMenu.classList.remove('open');
-                    menuToggle.classList.remove('open');
-                }
-            });
-        });
-        document.addEventListener('click', event => {
-            if (!navMenu || !menuToggle) return;
-            const target = event.target;
-            if (navMenu.classList.contains('open') && !navMenu.contains(target) && !menuToggle.contains(target)) {
-                navMenu.classList.remove('open');
-                menuToggle.classList.remove('open');
-            }
-        });
-
-        const tipoProjeto = document.getElementById('tipoProjeto');
-        const tipoHelp = document.getElementById('tipoHelp');
-        const tipoDescricoes = {
-            'Aplicativo Móvel': 'App para celular com foco em vendas, agendamento ou serviços mobile.',
-            'Site / Landing Page': 'Página na internet para apresentação da sua empresa ou oferta.',
-            'Sistema Web': 'Plataforma online para gestão e controle de processos internos.',
-            'QA / Testes': 'Avaliação da qualidade do seu software para reduzir erros e bugs.',
-            'Outros': 'Projeto personalizado para sua ideia ou necessidade específica.'
-        };
-        const projectCards = document.querySelectorAll('.project-card');
-        if (tipoProjeto && tipoHelp) {
-            tipoProjeto.addEventListener('change', () => {
-                tipoHelp.textContent = tipoDescricoes[tipoProjeto.value] || 'Escolha um tipo de projeto para ver mais detalhes.';
-            });
-            projectCards.forEach(card => {
-                card.addEventListener('click', () => {
-                    const selectedValue = card.getAttribute('data-value');
-                    if (!selectedValue) return;
-                    projectCards.forEach(item => item.classList.remove('active'));
-                    card.classList.add('active');
-                    tipoProjeto.value = selectedValue;
-                    tipoHelp.textContent = tipoDescricoes[selectedValue] || 'Escolha um tipo de projeto para ver mais detalhes.';
-                });
-            });
-        }
-    </script>
-</body>
+  </body>
 </html>
