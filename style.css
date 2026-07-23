@@ -73,12 +73,14 @@ ul {
 
 /* --- CABEÇALHO (HEADER) --- */
 header {
-  padding: 2rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   background-color: rgba(247, 245, 240, 0.95);
   backdrop-filter: blur(5px);
   z-index: 1000;
+  width: 100%;
+  /* ADICIONE ESTA LINHA: Garante que o fundo ocupe a tela toda */
 }
 
 .header-content {
@@ -96,6 +98,7 @@ header {
   gap: 0.5rem;
   color: var(--text-dark);
 }
+
 .logo span {
   color: var(--text-dark);
 }
@@ -248,7 +251,8 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 4rem;
-  border-top: 1px solid var(--border-color); /* Linha de divisão */
+  border-top: 1px solid var(--border-color);
+  /* Linha de divisão */
   padding-top: 6rem;
 }
 
@@ -282,7 +286,8 @@ nav a:hover {
 .about-image-1 {
   /* Imagem 1 (Ex: Tayane) */
   background-image: url("https://s3-up-reprograma.s3.us-east-1.amazonaws.com/FOTO-SITE-MAIARA.png");
-  margin-top: 4rem; /* Deslocamento para dar um ar mais editorial */
+  margin-top: 4rem;
+  /* Deslocamento para dar um ar mais editorial */
 }
 
 .about-image-2 {
@@ -300,17 +305,20 @@ nav a:hover {
   align-items: center;
   gap: 4rem;
   margin-bottom: 6rem;
-  border-top: 1px solid var(--border-color); /* Linha de divisão */
+  border-top: 1px solid var(--border-color);
+  /* Linha de divisão */
   padding-top: 6rem;
 }
 
 .featured-image {
   flex: 1.2;
-  background-color: transparent; /* Remove o fundo cinza */
+  background-color: transparent;
+  /* Remove o fundo cinza */
   height: 400px;
   border-radius: 8px;
   background-image: url("img/movimento-delas.PNG");
-  background-size: contain; /* Adequa a imagem sem cortar */
+  background-size: contain;
+  /* Adequa a imagem sem cortar */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -368,7 +376,8 @@ nav a:hover {
 .contact {
   padding: 8rem 0;
   text-align: center;
-  border-top: 1px solid var(--border-color); /* Linha de divisão */
+  border-top: 1px solid var(--border-color);
+  /* Linha de divisão */
 }
 
 .contact .title-serif {
@@ -376,7 +385,7 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.contact > p {
+.contact>p {
   color: var(--text-gray);
   max-width: 600px;
   margin: 0 auto 4rem auto;
@@ -480,7 +489,8 @@ footer {
 
 .btn-primary {
   /* ... suas regras atuais ... */
-  white-space: nowrap; /* Evita que o texto e a seta quebrem em duas linhas */
+  white-space: nowrap;
+  /* Evita que o texto e a seta quebrem em duas linhas */
   justify-content: center;
 }
 
@@ -488,6 +498,7 @@ footer {
 .menu-toggle {
   display: none;
 }
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -495,6 +506,7 @@ footer {
   gap: 5px;
   padding: 10px 0;
 }
+
 .hamburger span {
   width: 25px;
   height: 2px;
@@ -503,80 +515,171 @@ footer {
 }
 
 @media (max-width: 900px) {
+
   /* Garante um respiro lateral seguro antes do celular */
   .container {
-    padding: 0 2rem; 
+    padding: 0 2rem;
   }
-  
+
   /* Redução de espaçamentos entre seções */
-  .hero, .expertise, .projects, .contact { padding: 4rem 0; }
-  .about { padding: 2rem 0; } /* Evita somar padding com a seção debaixo */
-  .about-content { padding-top: 3rem; }
-  .featured-project { padding-top: 3rem; margin-bottom: 3rem; }
-  .projects-grid { padding-top: 3rem; }
+  .hero,
+  .expertise,
+  .projects,
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+
+  /* Evita somar padding com a seção debaixo */
+  .about-content {
+    padding-top: 3rem;
+  }
+
+  .featured-project {
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects-grid {
+    padding-top: 3rem;
+  }
 
   /* Cabeçalho e Navegação */
-  .header-content { flex-direction: column; gap: 1.5rem; }
-  nav ul { flex-wrap: wrap; justify-content: center; gap: 1.2rem; }
+  .header-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
 
   /* Alinhamento e Empilhamento */
-  .hero, .about-content, .featured-project {
+  .hero,
+  .about-content,
+  .featured-project {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
   }
-  
-  .hero-text p, .about-text p, .featured-text p { margin: 1rem auto; }
-  .hero-actions { justify-content: center; }
+
+  .hero-text p,
+  .about-text p,
+  .featured-text p {
+    margin: 1rem auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
 
   /* Grids */
-  .expertise-grid, .projects-grid {
+  .expertise-grid,
+  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   .expertise-header {
-    flex-direction: column; align-items: center; text-align: center;
-    gap: 1rem; margin-bottom: 2rem; padding-bottom: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
-  .expertise-header p { text-align: center; }
+
+  .expertise-header p {
+    text-align: center;
+  }
 
   /* Ajuste de Imagens */
-  .hero-image, .featured-image, .about-image-1, .about-image-2 {
+  .hero-image,
+  .featured-image,
+  .about-image-1,
+  .about-image-2 {
     width: 100%;
     min-height: 400px;
-    flex: none; /* Impede o Flexbox de amassar a imagem */
+    flex: none;
+    /* Impede o Flexbox de amassar a imagem */
   }
-  .about-images { flex-direction: column; width: 100%; margin-top: 1rem; gap: 1rem; }
-  .about-image-1 { margin-top: 0; }
-  
-  .title-serif { font-size: 3rem; }
+
+  .about-images {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .about-image-1 {
+    margin-top: 0;
+  }
+
+  .title-serif {
+    font-size: 3rem;
+  }
 }
 
 /* --- CELULARES (Até 600px) --- */
 @media (max-width: 600px) {
+
   /* CORREÇÃO 3: Forçar as margens laterais com !important para afastar textos e botões da borda */
   .container {
-    padding-left: 1.5rem !important; 
+    padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
 
   /* CORREÇÃO 2: Espaçamentos ultra enxutos para fluxo contínuo */
-  .hero { padding: 2rem 0; }
-  .expertise { padding: 3rem 0; }
-  
-  .about { padding: 1rem 0; } 
-  .about-content { padding-top: 2rem; gap: 1.5rem; }
-  
-  .projects { padding: 1rem 0; } 
-  .featured-project { padding-top: 2rem; margin-bottom: 2rem; gap: 1.5rem; }
-  .projects-grid { padding-top: 2rem; gap: 2rem; }
-  
-  .contact { padding: 3rem 0; }
+  .hero {
+    padding: 2rem 0;
+  }
 
-  .expertise-grid, .projects-grid { grid-template-columns: 1fr; }
+  .expertise {
+    padding: 3rem 0;
+  }
 
-  .title-serif, .contact .title-serif { font-size: 2.2rem; }
+  .about {
+    padding: 1rem 0;
+  }
+
+  .about-content {
+    padding-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .projects {
+    padding: 1rem 0;
+  }
+
+  .featured-project {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+  }
+
+  .projects-grid {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+
+  .contact {
+    padding: 3rem 0;
+  }
+
+  .expertise-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title-serif,
+  .contact .title-serif {
+    font-size: 2.2rem;
+  }
 
   /* CORREÇÃO 1: Imagens sem cortes (Rostos visíveis) */
   .hero-image,
@@ -584,31 +687,109 @@ footer {
   .about-image-1,
   .about-image-2 {
     min-height: auto;
-    height: 350px; 
-    background-size: cover; /* Mantém o padrão de preencher a caixa */
-    background-position: top center; 
-    border-radius: 12px; 
+    height: 350px;
+    background-size: cover;
+    /* Mantém o padrão de preencher a caixa */
+    background-position: top center;
+    border-radius: 12px;
   }
 
   /* 2. Isola o Movimento Delas para NÃO cortar no celular */
   .featured-image {
     min-height: auto;
-    height: 220px; /* Mais baixo para não sobrar espaços em branco */
-    background-size: contain; /* A mágica que impede o corte */
+    height: 220px;
+    /* Mais baixo para não sobrar espaços em branco */
+    background-size: contain;
+    /* A mágica que impede o corte */
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent; /* Tira o fundo cinza */
+    background-color: transparent;
+    /* Tira o fundo cinza */
   }
 
-  .contact-form { width: 100%; }
-  .form-group { margin-bottom: 1.5rem; }
-  
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
   /* Botão elegante e desencostado da margem */
-  .btn-submit { 
-    width: 100%; 
-    border-radius: 8px; 
+  .btn-submit {
+    width: 100%;
+    border-radius: 8px;
     padding: 1.2rem 1rem;
   }
 
-  .footer-content { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   COMPORTAMENTO DO MENU HAMBÚRGUER
+   ========================================= */
+
+/* 1. Esconde o botão no computador e prepara o design dele */
+.menu-toggle,
+.hamburger {
+  display: none;
+}
+
+.hamburger {
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+/* 2. Ativa o menu apenas em telas menores (Tablets e Celulares) */
+@media (max-width: 900px) {
+
+  /* Mantém a logo e o botão na mesma linha */
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Permite que a lista desça para a linha de baixo */
+  }
+
+  /* Mostra o ícone do hambúrguer */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Esconde a lista de links por padrão */
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  /* MÁGICA: Quando clicar no ícone, mostra a lista */
+  .menu-toggle:checked~.nav-menu {
+    display: block;
+  }
+
+  /* Estiliza os links quando o menu está aberto */
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
 }

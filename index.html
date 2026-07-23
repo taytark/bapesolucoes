@@ -1,197 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bape Soluções</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/logo-bapesolucoes.png" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- CABEÇALHO -->
-    <header class="container">
-      <div class="header-content">
-        <a href="#" class="logo">
-          <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon" />
-          <span>Bape Soluções</span>
-        </a>
+    <header>
+        <div class="header-content container">
+            <a href="#" class="logo">
+                <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon" />
+                <span>Bape Soluções</span>
+            </a>
 
-        <!-- Controle do Menu Mobile (Sem JavaScript) -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+            <!-- Controle do Menu Mobile (Botão Hambúrguer) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#servicos">SERVIÇOS</a></li>
-            <li><a href="#portfolio">PORTFÓLIO</a></li>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#orcamento" style="color: var(--accent-color)">ORÇAMENTO</a></li>
-          </ul>
-        </nav>
-      </div>
+            <!-- Navegação -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#portfolio">PORTFÓLIO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#orcamento" style="color: var(--accent-color)">ORÇAMENTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- HERO -->
     <section class="hero container">
-      <div class="hero-text">
-        <span class="section-label">ESTÚDIO DE SOFTWARE</span>
-        <h1 class="title-serif">
-          Arquitetura de <br /><span class="italic-accent">Software</span> com alma.
-        </h1>
-        <p>
-          Criamos soluções digitais personalizadas que unem a precisão técnica
-          ao design editorial. Apps, sistemas e experiências de usuário sob medida.
-        </p>
-        <div class="hero-actions">
-          <a href="#orcamento" class="btn-primary">INICIAR PROJETO &rarr;</a>
-          <a href="#portfolio" class="link-secondary">VER PORTFÓLIO</a>
+        <div class="hero-text">
+            <span class="section-label">ESTÚDIO DE SOFTWARE</span>
+            <h1 class="title-serif">
+                Arquitetura de <br /><span class="italic-accent">Software</span> com alma.
+            </h1>
+            <p>
+                Criamos soluções digitais personalizadas que unem a precisão técnica
+                ao design editorial. Apps, sistemas e experiências de usuário sob medida.
+            </p>
+            <div class="hero-actions">
+                <a href="#orcamento" class="btn-primary">INICIAR PROJETO &rarr;</a>
+                <a href="#portfolio" class="link-secondary">VER PORTFÓLIO</a>
+            </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <!-- Espaço da imagem do celular -->
-      </div>
+        <div class="hero-image">
+            <!-- Espaço da imagem do celular -->
+        </div>
     </section>
 
     <!-- EXPERTISE / SERVIÇOS -->
     <section class="expertise" id="servicos">
-      <div class="container">
-        <div class="expertise-header">
-          <h2 class="title-serif">Nossa Expertise</h2>
-          <p>DA CONCEPÇÃO VISUAL À INFRAESTRUTURA ROBUSTA DE BACKEND.</p>
+        <div class="container">
+            <div class="expertise-header">
+                <h2 class="title-serif">Nossa Expertise</h2>
+                <p>DA CONCEPÇÃO VISUAL À INFRAESTRUTURA ROBUSTA DE BACKEND.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <span class="number">01/</span>
+                    <h3>Desenvolvimento de Apps</h3>
+                    <p>Aplicativos móveis para Android e iOS, com interfaces fluidas e performance nativa.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="number">02/</span>
+                    <h3>Sistemas Personalizados</h3>
+                    <p>Plataformas web sob medida para otimizar processos internos e escalar operações.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="number">03/</span>
+                    <h3>Design UX/UI</h3>
+                    <p>Interfaces que contam histórias, priorizando usabilidade sem sacrificar a estética.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="number">04/</span>
+                    <h3>Garantia de Qualidade</h3>
+                    <p>Testes automatizados e análise de código para entregas livres de erros.</p>
+                </div>
+            </div>
         </div>
-        <div class="expertise-grid">
-          <div class="expertise-item">
-            <span class="number">01/</span>
-            <h3>Desenvolvimento de Apps</h3>
-            <p>Aplicativos móveis para Android e iOS, com interfaces fluidas e performance nativa.</p>
-          </div>
-          <div class="expertise-item">
-            <span class="number">02/</span>
-            <h3>Sistemas Personalizados</h3>
-            <p>Plataformas web sob medida para otimizar processos internos e escalar operações.</p>
-          </div>
-          <div class="expertise-item">
-            <span class="number">03/</span>
-            <h3>Design UX/UI</h3>
-            <p>Interfaces que contam histórias, priorizando usabilidade sem sacrificar a estética.</p>
-          </div>
-          <div class="expertise-item">
-            <span class="number">04/</span>
-            <h3>Garantia de Qualidade</h3>
-            <p>Testes automatizados e análise de código para entregas livres de erros.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- SOBRE -->
     <section class="about container" id="sobre">
-      <div class="about-content">
-        <div class="about-text">
-          <span class="section-label">SOBRE NÓS</span>
-          <h2 class="title-serif">Nossa <br/><span class="italic-accent">História</span></h2>
-          <p>
-            A Bape Soluções nasceu da união entre a paixão pelo desenvolvimento de software 
-             o compromisso com a qualidade técnica. Liderada por Tayane Ramos e Maiara Baltazar, nossa consultoria foca em entregar produtos que não apenas funcionam, mas superam as expectativas de performance e usabilidade.
-          </p>
+        <div class="about-content">
+            <div class="about-text">
+                <span class="section-label">SOBRE NÓS</span>
+                <h2 class="title-serif">Nossa <br /><span class="italic-accent">História</span></h2>
+                <p>
+                    A Bape Soluções nasceu da união entre a paixão pelo desenvolvimento de software
+                    o compromisso com a qualidade técnica. Liderada por Tayane Ramos e Maiara Baltazar, nossa
+                    consultoria foca em entregar produtos que não apenas funcionam, mas superam as expectativas de
+                    performance e usabilidade.
+                </p>
+            </div>
+            <div class="about-images">
+                <div class="about-image-1"></div>
+                <div class="about-image-2"></div>
+            </div>
         </div>
-        <div class="about-images">
-          <div class="about-image-1"></div>
-          <div class="about-image-2"></div>
-        </div>
-      </div>
     </section>
 
     <!-- PROJETOS / PORTFÓLIO -->
     <section class="projects container" id="portfolio">
-      <div class="featured-project">
-        <div class="featured-image">
-          <!-- Imagem do app Movimento Delas -->
+        <div class="featured-project">
+            <div class="featured-image">
+                <!-- Imagem do app Movimento Delas -->
+            </div>
+            <div class="featured-text">
+                <span class="section-label">PROJETO EM DESTAQUE</span>
+                <h2 class="title-serif">Movimento Delas: <br />agenda que empodera.</h2>
+                <p>
+                    Sistema de agendamento de aulas para personal trainers. Controle
+                    total de alunas, turmas e evolução em um único lugar — pensado com
+                    carinho para uma rotina que respira.
+                </p>
+            </div>
         </div>
-        <div class="featured-text">
-          <span class="section-label">PROJETO EM DESTAQUE</span>
-          <h2 class="title-serif">Movimento Delas: <br />agenda que empodera.</h2>
-          <p>
-            Sistema de agendamento de aulas para personal trainers. Controle
-            total de alunas, turmas e evolução em um único lugar — pensado com
-            carinho para uma rotina que respira.
-          </p>
-          <a href="#" class="link-underline">Ver projeto completo</a>
-        </div>
-      </div>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <span class="section-label">E-COMMERCE</span>
-          <h3>Polarys Ornatos</h3>
-          <p>Loja online de joias de alta qualidade com catálogo completo e gestão de pedidos.</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <span class="section-label">E-COMMERCE</span>
+                <h3>Polarys Ornatos</h3>
+                <p>Loja online de joias de alta qualidade com catálogo completo e gestão de pedidos.</p>
+            </div>
+            <div class="project-card">
+                <span class="section-label">HEALTH TECH</span>
+                <h3>StarFit</h3>
+                <p>Plataforma para montagem de treinos personalizados com app de acompanhamento.</p>
+            </div>
+            <div class="project-card">
+                <span class="section-label">LANDING PAGE</span>
+                <h3>Páginas de Conversão</h3>
+                <p>Apresentação de produto ou serviço otimizada para conversão e resultados.</p>
+            </div>
         </div>
-        <div class="project-card">
-          <span class="section-label">HEALTH TECH</span>
-          <h3>StarFit</h3>
-          <p>Plataforma para montagem de treinos personalizados com app de acompanhamento.</p>
-        </div>
-        <div class="project-card">
-          <span class="section-label">LANDING PAGE</span>
-          <h3>Páginas de Conversão</h3>
-          <p>Apresentação de produto ou serviço otimizada para conversão e resultados.</p>
-        </div>
-      </div>
     </section>
 
     <!-- ORÇAMENTO -->
     <section class="contact container" id="orcamento">
-      <span class="section-label">ORÇAMENTO</span>
-      <h2 class="title-serif">
-        Vamos construir o <br /><span class="italic-accent">amanhã</span>?
-      </h2>
-      <p>
-        Entre em contato para uma consultoria técnica e criativa inicial.
-        Projetamos soluções que elevam seu negócio.
-      </p>
+        <span class="section-label">ORÇAMENTO</span>
+        <h2 class="title-serif">
+            Vamos construir o <br /><span class="italic-accent">amanhã</span>?
+        </h2>
+        <p>
+            Entre em contato para uma consultoria técnica e criativa inicial.
+            Projetamos soluções que elevam seu negócio.
+        </p>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <label>SEU NOME</label>
-          <input type="text" placeholder="Como podemos te chamar?" />
-        </div>
-        <div class="form-group">
-          <label>EMAIL</label>
-          <input type="email" placeholder="voce@empresa.com.br" />
-        </div>
-        <div class="form-group">
-          <label>SOBRE O PROJETO</label>
-          <input type="text" placeholder="Conte brevemente o que você precisa" />
-        </div>
-        <button type="button" class="btn-submit">SOLICITAR ORÇAMENTO</button>
-      </form>
+        <!-- Formulário com ID adicionado -->
+        <form id="contactForm" action="https://formsubmit.co/bapesolucoes@gmail.com" method="POST" class="contact-form">
+
+            <input type="hidden" name="_subject" value="Novo Orçamento recebido pelo site Bape Soluções!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+                <label>SEU NOME</label>
+                <input type="text" name="nome" placeholder="Como podemos te chamar?" required />
+            </div>
+
+            <div class="form-group">
+                <label>EMAIL</label>
+                <input type="email" name="email" placeholder="seu@email.com.br" required />
+            </div>
+
+            <div class="form-group">
+                <label>SOBRE O PROJETO</label>
+                <input type="text" name="projeto" placeholder="Conte brevemente o que você precisa" required />
+            </div>
+
+            <button type="submit" class="btn-submit">SOLICITAR ORÇAMENTO</button>
+
+            <!-- Mensagem de sucesso oculta por padrão -->
+            <div id="successMessage"
+                style="display: none; color: #b88566; margin-top: 20px; font-weight: 600; text-align: center;">
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </div>
+        </form>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      <div class="container footer-content">
-        <div class="footer-left">
-          <div class="logo">
-            <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon-footer" />
-          </div>
-          <span>© 2026 BAPE SOLUÇÕES</span>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="img/logo-bapesolucoes.png" alt="Ícone Bape" class="logo-icon-footer" />
+                </div>
+                <span>© 2026 BAPE SOLUÇÕES</span>
+            </div>
+            <div class="footer-links">
+                <!-- E-mail apenas como texto -->
+                <span>bapesolucoes@gmail.com</span>
+
+                <!-- Instagram abrindo em nova aba -->
+                <a href="https://www.instagram.com/bapesolucoes/" target="_blank">INSTAGRAM</a>
+
+                <!-- Contato direcionando para o WhatsApp com mensagem pré-definida -->
+                <a href="https://wa.me/5521994551479?text=Olá!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20a%20Bape%20Soluções."
+                    target="_blank">CONTATO</a>
+            </div>
         </div>
-        <div class="footer-links">
-          <a href="#">LINKEDIN</a>
-          <a href="#">INSTAGRAM</a>
-          <a href="#">CONTATO</a>
-        </div>
-      </div>
     </footer>
-  </body>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o redirecionamento padrão do navegador
+
+            const form = e.target;
+            const data = new FormData(form);
+            const button = form.querySelector('.btn-submit');
+            const successMessage = document.getElementById('successMessage');
+
+            // Feedback visual de que está carregando
+            button.innerText = 'ENVIANDO...';
+            button.disabled = true;
+
+            // Envia os dados silenciosamente
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Sucesso: Mostra a mensagem, limpa o form e reseta o botão
+                    successMessage.style.display = 'block';
+                    form.reset();
+                    button.innerText = 'SOLICITAR ORÇAMENTO';
+                    button.disabled = false;
+
+                    // Oculta a mensagem depois de 5 segundos
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    alert('Ocorreu um erro ao enviar. Tente novamente.');
+                    button.innerText = 'SOLICITAR ORÇAMENTO';
+                    button.disabled = false;
+                }
+            }).catch(error => {
+                alert('Erro de conexão. Verifique sua internet e tente novamente.');
+                button.innerText = 'SOLICITAR ORÇAMENTO';
+                button.disabled = false;
+            });
+        });
+    </script>
+    <!-- SCRIPT DO MENU MOBILE -->
+    <script>
+        document.addEventListener('click', function (event) {
+            const menuToggle = document.getElementById('menu-toggle');
+            const header = document.querySelector('header');
+
+            // 1. Se o menu estiver aberto e o clique for FORA do cabeçalho, ele fecha
+            if (menuToggle && menuToggle.checked && !header.contains(event.target)) {
+                menuToggle.checked = false;
+            }
+        });
+
+        // 2. Se clicar em qualquer link dentro do menu, ele fecha (para rolar suavemente até a seção)
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const menuToggle = document.getElementById('menu-toggle');
+                if (menuToggle) {
+                    menuToggle.checked = false;
+                }
+            });
+        });
+    </script>
+</body>
 </html>
