@@ -391,6 +391,123 @@ nav a:hover {
   margin: 0 auto 4rem auto;
 }
 
+/* =========================================
+   PÍLULAS DE CONTATO DIRETO
+   ========================================= */
+.direct-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  /* Para não quebrar no celular */
+}
+
+/* =========================================
+   DIVISOR DE CONTATO ("OU PREENCHA...")
+   ========================================= */
+.contact-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 3.5rem auto;
+  /* Centraliza e empurra o formulário para baixo */
+  max-width: 600px;
+  /* Alinha perfeitamente com a largura do formulário */
+}
+
+/* Cria as linhas laterais elegantes */
+.contact-divider::before,
+.contact-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-divider span {
+  padding: 0 1.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-gray);
+  font-weight: 600;
+}
+
+.contact-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+/* =========================================
+   AJUSTE ESPECÍFICO DO E-MAIL (APENAS TEXTO)
+   ========================================= */
+.email-pill {
+  text-transform: lowercase;
+  /* Mantém o e-mail em letras minúsculas */
+  cursor: default;
+  /* Remove o cursor de clique */
+}
+
+/* Remove os efeitos visuais de botão ao passar o mouse */
+.email-pill:hover {
+  background-color: transparent !important;
+  color: var(--text-dark) !important;
+  border-color: var(--border-color) !important;
+}
+
+.email-pill:hover svg {
+  transform: none !important;
+  color: var(--accent-color) !important;
+}
+
+/* Garante que o texto fique legível caso o mouse passe por cima no Dark Mode */
+body.dark-mode .email-pill:hover {
+  background-color: transparent !important;
+  color: var(--text-dark) !important;
+}
+
+.contact-pill svg {
+  color: var(--accent-color);
+  /* Os ícones ficam na cor de destaque (cobre) */
+  transition: transform 0.3s ease;
+}
+
+.contact-pill:hover {
+  border-color: var(--accent-color);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.contact-pill:hover svg {
+  transform: scale(1.1);
+  color: var(--text-light);
+}
+
+/* Garante que as pílulas se adaptem automaticamente ao modo escuro */
+body.dark-mode .contact-pill {
+  color: var(--text-dark);
+  /* Variável já invertida */
+}
+
+body.dark-mode .contact-pill:hover {
+  background-color: var(--text-dark);
+  color: #15121b;
+}
+
+body.dark-mode .contact-pill:hover svg {
+  color: #15121b;
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
