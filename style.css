@@ -484,7 +484,7 @@ body.dark-mode .email-pill:hover {
 
 .contact-pill:hover {
   border-color: var(--accent-color);
-  background-color: var(--bg-dark);
+  background-color: var(--accent-color);
   color: var(--text-light);
 }
 
@@ -879,6 +879,20 @@ footer {
     flex-wrap: wrap;
     /* Permite que a lista desça para a linha de baixo */
   }
+
+  .hero,
+  .about-content,
+  .featured-project {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .featured-project {
+    flex-direction: column-reverse;
+  }
+
+
 
   /* Mostra o ícone do hambúrguer */
   .hamburger {
