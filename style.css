@@ -284,14 +284,14 @@ nav a:hover {
 }
 
 .about-image-1 {
-  /* Imagem 1 (Ex: Tayane) */
-  background-image: url("https://s3-up-reprograma.s3.us-east-1.amazonaws.com/FOTO-SITE-MAIARA.png");
+  
+  background-image: url("img/maiara-bape.png");
   margin-top: 4rem;
-  /* Deslocamento para dar um ar mais editorial */
+  
 }
 
 .about-image-2 {
-  /* Imagem 2 (Ex: Maiara) */
+  
   background-image: url("https://s3-up-reprograma.s3.us-east-1.amazonaws.com/_F6292~1.JPG");
 }
 
@@ -385,7 +385,7 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.contact>p {
+.contact > p {
   color: var(--text-gray);
   max-width: 600px;
   margin: 0 auto 4rem auto;
@@ -419,7 +419,7 @@ nav a:hover {
 /* Cria as linhas laterais elegantes */
 .contact-divider::before,
 .contact-divider::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid var(--border-color);
 }
@@ -632,7 +632,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-
   /* Garante um respiro lateral seguro antes do celular */
   .container {
     padding: 0 2rem;
@@ -744,7 +743,6 @@ footer {
 
 /* --- CELULARES (Até 600px) --- */
 @media (max-width: 600px) {
-
   /* CORREÇÃO 3: Forçar as margens laterais com !important para afastar textos e botões da borda */
   .container {
     padding-left: 1.5rem !important;
@@ -872,7 +870,6 @@ footer {
 
 /* 2. Ativa o menu apenas em telas menores (Tablets e Celulares) */
 @media (max-width: 900px) {
-
   /* Mantém a logo e o botão na mesma linha */
   .header-content {
     display: flex;
@@ -895,7 +892,7 @@ footer {
   }
 
   /* MÁGICA: Quando clicar no ícone, mostra a lista */
-  .menu-toggle:checked~.nav-menu {
+  .menu-toggle:checked ~ .nav-menu {
     display: block;
   }
 
